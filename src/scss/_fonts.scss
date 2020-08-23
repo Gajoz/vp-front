@@ -1,0 +1,27 @@
+$font-path: "/fonts/";
+$font-list: (
+	("Nunito-ExtraLight", 200, normal),
+	("Nunito-ExtraLightItalic", 200, italic),
+	("Nunito-Light", 300, normal),
+	("Nunito-LightItalic", 300, italic),
+	("Nunito-Regular", normal, normal),
+	("Nunito-Italic", normal, italic),
+	("Nunito-SemiBold", 600, normal),
+	("Nunito-SemiBoldItalic", 600, italic),
+	("Nunito-Bold", 700, normal),
+	("Nunito-BoldItalic", 700, italic),
+	("Nunito-ExtraBold", 800, normal),
+	("Nunito-ExtraBoldItalic", 800, italic),
+	("Nunito-Black", 900, normal),
+	("Nunito-BlackItalic", 900, italic)
+);
+
+@each $name, $weight, $style in $font-list {
+	@font-face {
+		font-family: "Nunito";
+		src: url($font-path + $name + ".woff2") format("woff2"), url($font-path + $name + ".woff") format("woff");
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}

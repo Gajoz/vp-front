@@ -1,0 +1,16 @@
+include config.pug
+doctype html
+
+html(lang=config.lang)
+	head
+		//- block meta for local page config
+		block meta
+		include head.pug
+		
+	body
+		include header.pug
+		block content
+
+		include footer.pug
+
+		include scripts.pug
