@@ -19,5 +19,15 @@ body {
 	margin: 0 auto;
 	max-width: 1200px;
 }
+.central {
+	background-color: $gray-color;
+}
+.main {
+	padding: 30px 0;
+}
+.page-title {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
 
 // @import "_debug";

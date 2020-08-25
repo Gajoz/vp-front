@@ -1,3 +1,9 @@
 .cont-bar
-	address.cont-bar__address Ростов-на-Дону, ул. Тургеневская 78
-	a.cont-bar__phone(href="tel:+79508504515") +7 (950) 850-45-15
+	address.cont-bar__address.cont-bar__item
+		span.cont-bar__address-icon.cont-bar__icon
+			+svg('', 'icons--location', 'Адрес', 'location icon')
+		span.cont-bar__address-title Ростов-на-Дону, ул. Тургеневская 78
+	a.cont-bar__phone.cont-bar__item(href="tel:+79508504515")
+		span.cont-bar__phone-icon.cont-bar__icon
+			+svg('', 'icons--phone', 'Позвонить', 'phone icon')
+		span.cont-bar__phone-title +7 (950) 850-45-15

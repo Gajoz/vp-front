@@ -1,0 +1,9 @@
+extends ./layout/base.pug
+
+block meta
+	- config.pageTitle = 'Мы';
+	- config.title = pageTitle + ' - ' + config.title;
+	- config.description = 'some page description for about page';
+
+block content
+	h1 about page

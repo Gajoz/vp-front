@@ -72,10 +72,11 @@
 			link: '#',
 			available: true,
 		},
-	]
+	];
+- var title = config.pageTitle;
 
 .catalog
-	h2.page-title.catalog__title Каталог
+	h2.page-title.catalog__title #{title}
 	.catalog__inner
 		each book in books
 			article.book

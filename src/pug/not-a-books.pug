@@ -1,9 +1,9 @@
 extends ./layout/base.pug
 
 block meta
-	- config.pageTitle = 'Книги';
+	- config.pageTitle = 'Не книги';
 	- config.title = pageTitle + ' - ' + config.title;
-	- config.description = 'some page description for books page';
+	- config.description = 'some page description for non-books page';
 
 block content
 	include layout/catalog.pug

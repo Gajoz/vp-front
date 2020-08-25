@@ -88,7 +88,7 @@ const scripts = () => {
 const images = () => {
 	return src([
 		config.src + 'img/**/*.{png,jpg,jpeg,svg,gif}',
-		'!' + config.src + 'img/svg/sprite/**/*.svg'
+		'!' + config.src + 'img/sprite/**/*.svg'
 	])
 		.pipe(imagemin({
 			plugins: [
@@ -111,7 +111,7 @@ exports.images = images;
 
 
 const svgsprite = () => {
-	return src(config.src + 'img/svg/sprite/**/*.svg') // svg files for sprite
+	return src(config.src + 'img/sprite/**/*.svg') // svg files for sprite
 		.pipe(svgmin({
 			js2svg: {
 				pretty: true
@@ -133,7 +133,7 @@ const svgsprite = () => {
 			},
 		}
 		))
-		.pipe(dest(config.dest + 'img/svg'));
+		.pipe(dest(config.dest + 'img'));
 };
 exports.svgsprite = svgsprite;
 
