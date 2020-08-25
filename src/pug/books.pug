@@ -1,0 +1,9 @@
+extends ./layout/base.pug
+
+block meta
+	- config.title = 'Книги - ' + config.title;
+	- config.description = 'some page description for books page';
+
+block content
+	.inner
+		include layout/catalog.pug

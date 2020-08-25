@@ -1,0 +1,87 @@
+-
+	var books = [
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+		{
+			title: 'Конец присутствия',
+			author: 'Юрг Хальтер',
+			cost: 270,
+			cover: 'book-example0.jpg',
+			link: '#',
+			available: true,
+		},
+	]
+
+.catalog
+	h2.page-title.catalog__title Каталог
+	.catalog__inner
+		each book in books
+			article.book
+				.book__inner
+					a.book__cover(href=book.link title=book.title)
+						img.book__cover-img(src="/img/books/" + book.cover alt=book.author + ' - ' + book.title + " обложка")
+					.book__author #{book.author}
+					h3.book__title #{book.title}
+					.book__cost #{book.cost}.00 ₽

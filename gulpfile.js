@@ -58,7 +58,7 @@ const pug = () => {
 };
 
 const sass = () => {
-	return src(config.src + 'scss/**/*.scss')
+	return src(config.src + 'scss/main.scss')
 		.pipe(sourcemaps.init())
 		.pipe(gulpSass({
 			outputStyle: 'expanded'
