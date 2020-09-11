@@ -66,7 +66,7 @@ const sass = () => {
 		.on('error', gulpSass.logError)
 		.pipe(postcss([
 			autoprefixer(),
-			csso()
+			// csso()
 		]))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest(config.dest + 'css'))
